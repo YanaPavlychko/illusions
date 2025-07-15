@@ -1,71 +1,45 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-  }
-  header {
-    background: linear-gradient(to right, #e100ff, #7f00ff);
-    text-align: center;
-    padding: 30px 10px;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2em;
-  }
-  nav {
-    margin-top: 10px;
-  }
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  main {
-    text-align: center;
-    padding: 30px 10px;
-  }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-  }
-  .gallery img {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border: 4px solid white;
-    border-radius: 10px;
-  }
-  .contact {
-    background-color: #222;
-    padding: 30px;
-    max-width: 500px;
-    margin: 0 auto 30px;
-    border-radius: 10px;
-  }
-  .contact input, .contact textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
-  .contact button {
-    background-color: #e100ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: linear-gradient(to right, #e100ff, #7f00ff);
-    font-size: 0.9em;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 2rem 0;
+  background-color: #222;
+}
+
+h1 {
+  color: #00ffd5;
+  font-size: 2.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 340px;
+  height: 500px;
+  border-radius: 8px;
+  border: 2px solid #00ffd5;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: #222;
+  color: #aaa;
+  font-size: 0.9rem;
+}
